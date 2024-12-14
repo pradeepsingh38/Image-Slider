@@ -6,6 +6,10 @@
     <title> Image slider</title>
 </head>
 <style>
+    div{
+        display: flex;
+        justify-content: center;
+    }
     button{
         width: 198px;
         height: 30px;
@@ -14,15 +18,18 @@
     }
 </style>
 <body>
-    <figure>
-        <img src="./first.jpg" 
-        alt="" width="400px" height="300px">
-
-        <figcaption>
-            <button id="prev">Prev</button>
-            <button id="next">next</button>
-        </figcaption>
-    </figure>
+    <div>
+        <figure>
+            <img src="./first.jpg" 
+            alt="" width="400px" height="300px">
+    
+            <figcaption>
+                <button id="prev">Prev</button>
+                <button id="next">next</button>
+            </figcaption>
+        </figure>
+    </div>
+    
 
     <script>
         const img = document.querySelector("img")
