@@ -16,6 +16,7 @@
         height: 30px;
         background-color: blueviolet;
         border: none;
+        cursor: pointer;
     }
 </style>
 <body>
@@ -50,7 +51,7 @@
             upImg();
         })
         btnPrev.addEventListener("click",()=>{
-            ind = (ind+1)%images.length;
+            ind = (ind-1+images.length)%images.length;
             upImg();
         })
 
